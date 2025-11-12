@@ -1,0 +1,285 @@
+/* Common Style */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 1em;
+    margin: 0;
+} */
+
+body {
+    background-color: #201E2F;
+    font-family: "Itim", cursive;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.logo_area,
+#form,
+.total_per_person {
+    padding: 25px 35px;
+    border-radius: 10px;
+}
+
+/* Logo Area Style */
+.logo_area {
+    background-color: #47FBB9;
+    text-align: center;
+}
+
+.logo_area h2 {
+    color: black;
+}
+
+/* From Area Style */
+#form {
+    background-color: #303E52;
+}
+
+#form label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#form input {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 25px;
+    width: 100%;
+    font-family: "Itim", cursive;
+    padding: 12px 15px;
+    background-color: #34495e;
+    color: white;
+}
+
+.people_area {
+    margin-top: 10px;
+}
+
+.people_area p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inner_people {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner_people ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.inner_people ul li{
+    font-size: 30px;
+}
+#minusSum{
+    background-color: #e74c3c;
+}
+#plusSum{
+    background-color: #2ecc71;
+}
+#minusSum,
+#plusSum{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+#calculator{
+    background-color: #a29bfe;
+    border: none;
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px 35px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#calculator:hover{
+    background-color:#6c5ce7 ;
+}
+
+/* Total Per Person Style */
+.total_per_person {
+    background-color: black;
+    /* display: none; */
+}
+
+.total_per_person div{
+    display: flex;
+    justify-content:space-between ;
+}
+.total_per_person div{
+    display: flex;
+    justify-content:space-between ;
+}
+.total_per_person hr{
+    border: 2px dashed #ddd;
+    margin-bottom: 10px;
+}
+
+.total_per_person h2{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #00feb5;
+}
+.total_per_person h3,.total_per_person h4{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+/* ==============================
+   📱 Responsive Design
+   ============================== */
+@media (max-width: 768px) {
+    .top_body {
+        width: 95%;
+    }
+
+    #form label {
+        font-size: 18px;
+    }
+
+    #form input {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+
+    .inner_people ul {
+        gap: 20px;
+    }
+
+    #minusSum,
+    #plusSum {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    #calculator {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .total_per_person h2 {
+        font-size: 25px;
+    }
+
+    .total_per_person h3,
+    .total_per_person h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo_area h2 {
+        font-size: 22px;
+    }
+
+    #form label {
+        font-size: 16px;
+    }
+
+    .inner_people {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .inner_people ul {
+        gap: 15px;
+    }
+
+    #minusSum,
+    #plusSum {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    #calculator {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    /* .total_per_person {
+        padding: 20px;
+    }
+
+    .total_per_person h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .total_per_person div {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    } */
+}
+
+@media (max-width: 360px) {
+    #form label {
+        font-size: 14px;
+    }
+
+    #form input {
+        font-size: 14px;
+    }
+
+    #calculator {
+        font-size: 16px;
+    }
+
+    .inner_people ul li {
+        font-size: 25px;
+    }
+}
+
+
