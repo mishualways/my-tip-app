@@ -1,45 +1,45 @@
-# Tips Calculator — GitHub-ready
+# 💰 TipSplitte
 
-এই ফোল্ডারটিতে আপনার Tip Calculator প্রজেক্ট GitHub-এ আপলোড করার জন্য প্রয়োজনীয় সব ফাইল আছে এবং ছোট কিছু বাগও ঠিক করা হয়েছে (ট্যাক্স 5% সঠিকভাবে গণনা করা ইত্যাদি)।
+একটি ছোট কিন্তু কার্যকরী জাভাস্ক্রিপ্ট প্রজেক্ট যা ব্যবহারকারীদের **মোট বিল**, **টিপ**, **ট্যাক্স**, এবং **প্রতি ব্যক্তির খরচ** সহজে হিসাব করতে সাহায্য করে।
 
-## যা দেয়ানো আছে
-- `index.html` — প্রকল্প পেজ
-- `style.css` — স্টাইলশীট
-- `script.js` — জাভাস্ক্রিপ্ট (কিছু বাগ ফিক্স করা হয়েছে)
-- `LICENSE` — MIT লাইসেন্স
-- `README.md` — এই ফাইল
+---
 
-## লোকালভাবে চালানো
-ফাইলগুলো একই ফোল্ডারে রেখে ব্রাউজারে `index.html` খুললেই কাজ করবে।
+## 🛠 Features
 
-## GitHub-এ আপলোড (আমি `main` ব্রাঞ্চ` ধরে নিচ্ছি)
-নীচের কমান্ডগুলো টার্মিনালে রান করান (নিজের `username` এবং `repo-name` ব্যবহার করবেন):
+* **Increment/Decrement** বাটন দিয়ে অতিথির সংখ্যা পরিবর্তন করা যায়।
+* **মোট বিল**, **টিপ %**, এবং **প্রতি ব্যক্তির খরচ** দেখানো হয়।
+* 5% **ট্যাক্স** স্বয়ংক্রিয়ভাবে হিসাব করা হয়।
+* **ভ্যালিডেশন**: ভুল বা শূন্য মান এন্ট্রি করলে সতর্কতা দেখায়।
+* সুন্দরভাবে **Summary Tab**-এ সব মান প্রদর্শন।
 
-```bash
-git init
-git add .
-git commit -m "Initial commit — Tip Calculator"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-git push -u origin main
-```
+---
 
-> যদি আগে থেকে রিমোট থাকে, `git remote remove origin` করে পুনরায় `git remote add origin ...` ব্যবহার করতে পারেন।
+## 💻 Technologies Used
 
-## GitHub Pages (Live link পেতে)
-1. GitHub এ আপনার রিপোজিটরি ওপেন করুন।
-2. **Settings → Pages** এ যান।
-3. **Source** থেকে `Branch: main` এবং `Folder: / (root)` সিলেক্ট করুন, তারপর Save করুন।
-4. কয়েক মিনিটের মধ্যে পেজ বিল্ড হয়ে লাইভ হবে। লিংক হবে:
+* HTML
+* CSS
+* JavaScript (Vanilla JS)
 
-```
-https://<your-username>.github.io/<your-repo-name>/
-```
+---
 
-> নিশ্চিত করুন যে `index.html` রিপো রুটে আছে (কোন সাবফোল্ডারে নয়), এবং `total_per_person` সেকশন ডিফল্টরূপে লুকানো আছে—Calculate ক্লিক করলে দেখা যাবে।
+## ⚡ How to Use
 
-## সমস্যা হলে
-- যদি পেজ না আসে, GitHub Actions বা Pages এর বিলে ত্রুটি দেখুন (Settings → Pages section)।
-- যদি কোনো ব্রাউজার কেশuing সমস্যা দেখেন, ব্রাউজার ক্যাশ ক্লিয়ার করে পেজ রিফ্রেশ করুন (Ctrl+F5)।
+1. `totalBill` ইনপুটে মোট বিলের পরিমাণ লিখুন।
+2. `tipMain` ইনপুটে টিপ % লিখুন (যেমন: 10, 15, 20)।
+3. **+ / -** বাটন দিয়ে অতিথির সংখ্যা নির্বাচন করুন।
+4. **Calculate** বাটনে ক্লিক করুন।
+5. নিচে **Summary Tab**-এ দেখাবে:
 
-**শুভকামনা!** যদি চান আমি সরাসরি জিপ বানিয়ে দিই (আপনি ডাউনলোড করে GitHub-এ আপলোড করতে পারবেন)।  
+   * Total Bill
+   * Tip Amount
+   * Tax Amount
+   * Total Per Person
+
+---
+
+## 📝 Example
+
+| Total Bill | Tip % | People | Tip Amount | Tax Amount | Total Per Person |
+| ---------- | ----- | ------ | ---------- | ---------- | ---------------- |
+| 100        | 10    | 2      | 10.00      | 5.00       | 57.50            |
+
